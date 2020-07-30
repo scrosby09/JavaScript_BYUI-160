@@ -8,7 +8,7 @@
 <body>
 	
 	<button type="button" onclick="powTable()">Show Exponents Table</button><br>
-    <h4>Expenents Table</h4>
+    <h3>Exponents Table</h3>
     <div id="solution"></div>
 	<script>
 		function powTable()
