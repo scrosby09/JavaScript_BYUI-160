@@ -1,0 +1,38 @@
+
+<!DOCTYPE HTML>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<title>Adding Arrays</title>
+
+<script>
+
+    function testArray(){
+        
+        var myArray = [3, 7, 12, 65, 90, 81, 102, 12];
+        var result = getMiddle(myArray);
+        document.getElementById('output').innerHTML = "First Array: " + myArray[0] + "<br>" + " Last Array: " + myArray[myArray.length -1 ] + "<br>" + "Sum: " + result;
+    }
+    
+    function getMiddle(list){
+        
+        var middle = '';
+        
+        if (list.length % 2 ==0){
+            
+            var middle = list.length / 2;
+            return (list[middle] + list[middle -1]) / 2;
+        }
+        else 
+            {
+                return list[Math.round((list.length -1)/2)];
+            }
+    }
+     
+</script>
+</head>
+<body>
+<button type="button" onclick="testArray()">Adding Arrays</button>
+<div id="output"></div>
+</body>
+</html>
