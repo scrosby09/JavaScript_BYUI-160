@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Exponents Table</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	
+	<button type="button" onclick="powTable()">Show Exponents Table</button><br>
+    <h4>Expenents Table</h4>
+    <div id="solution"></div>
+	<script>
+		function powTable()
+		{
+
+			var message = "";
+			var i = 2;
+
+
+			for(j = 0; j <= 31; j++ )
+			{
+
+				if ( j < 31)
+				{
+					message += Math.pow(i, j) + ", ";
+				}
+
+				else 
+				{
+					message += Math.pow(i, j);
+				}
+					
+			}
+
+			document.getElementById("solution").innerHTML = message;
+		}
+	</script>
+</body>
+</html>
